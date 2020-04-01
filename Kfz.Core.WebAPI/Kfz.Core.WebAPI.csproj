@@ -7,10 +7,18 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.19" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.6.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Kfz.Core.Contracts\Kfz.Core.Contracts.csproj" />
     <ProjectReference Include="..\Kfz.Core.DataAccess\Kfz.Core.DataAccess.csproj" />
+    <ProjectReference Include="..\Kfz.Core.LoggerService\Kfz.Core.LoggerService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logs\" />
+    <Folder Include="InternalLogs\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kfz.Core.ConsoleApp", "Kfz.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kfz.Core.WebAPI", "Kfz.Core.WebAPI\Kfz.Core.WebAPI.csproj", "{037F0A32-82E8-4408-8F92-813CD60B6361}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kfz.Core.Contracts", "Kfz.Core.Contracts\Kfz.Core.Contracts.csproj", "{291C719A-0FF0-4688-B43A-7C77349D2BEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kfz.Core.LoggerService", "Kfz.Core.LoggerService\Kfz.Core.LoggerService.csproj", "{3BA117D1-EB55-4980-B0CA-883A5E42CED1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{037F0A32-82E8-4408-8F92-813CD60B6361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{037F0A32-82E8-4408-8F92-813CD60B6361}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{037F0A32-82E8-4408-8F92-813CD60B6361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291C719A-0FF0-4688-B43A-7C77349D2BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291C719A-0FF0-4688-B43A-7C77349D2BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291C719A-0FF0-4688-B43A-7C77349D2BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291C719A-0FF0-4688-B43A-7C77349D2BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA117D1-EB55-4980-B0CA-883A5E42CED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA117D1-EB55-4980-B0CA-883A5E42CED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA117D1-EB55-4980-B0CA-883A5E42CED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA117D1-EB55-4980-B0CA-883A5E42CED1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

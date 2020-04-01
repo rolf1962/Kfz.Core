@@ -12,6 +12,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Kfz.Core.DataAccess;
+using System.IO;
+using NLog;
+using Kfz.Core.Contracts;
+using Kfz.Core.LoggerService;
 
 namespace Kfz.Core.WebAPI
 {
@@ -20,6 +24,7 @@ namespace Kfz.Core.WebAPI
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
         }
 
         public IConfiguration Configuration { get; }
@@ -27,6 +32,7 @@ namespace Kfz.Core.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<ILoggerManager, LoggerManager>();
             services.AddDbContext<KfzContext>(ServiceLifetime.Scoped);
             services.AddControllers();
         }

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Kfz.Core.Model;
 using Kfz.Core.DataAccess;
-using Microsoft.Extensions.Logging;
+using Kfz.Core.Contracts;
 
 namespace Kfz.Core.WebAPI.Controllers
 {
@@ -14,10 +14,10 @@ namespace Kfz.Core.WebAPI.Controllers
     [Route("[controller]")]
     public class VehicleTypeController : ControllerBase
     {
-        private ILogger<VehicleTypeController> _logger;
+        private ILoggerManager _logger;
         private KfzContext _context;
 
-        public VehicleTypeController(KfzContext context, ILogger<VehicleTypeController> logger)
+        public VehicleTypeController(KfzContext context, ILoggerManager logger)
         {
             _logger = logger;
             _context = context;
