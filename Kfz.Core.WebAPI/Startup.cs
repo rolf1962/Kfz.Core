@@ -32,8 +32,14 @@ namespace Kfz.Core.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Logging hinzufügen
             services.AddSingleton<ILoggerManager, LoggerManager>();
-            services.AddDbContext<KfzContext>(ServiceLifetime.Scoped);
+
+            // DbContext konfigurieren und hinzufügen
+            var connectionString = Configuration["mysqlconnection:connectionString"];
+            services.AddDbContext<KfzContext>(o => o.UseMySQL(connectionString), ServiceLifetime.Scoped);
+
+            // Vorhandene Controller hinzufügen
             services.AddControllers();
         }
 

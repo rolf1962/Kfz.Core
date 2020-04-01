@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kfz.Core.Model", "Kfz.Core.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kfz.Core.DataAccess", "Kfz.Core.DataAccess\Kfz.Core.DataAccess.csproj", "{949B85D7-1583-4B69-AE01-7E52D69DC4E5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kfz.Core.ConsoleApp", "Kfz.Core.ConsoleApp\Kfz.Core.ConsoleApp.csproj", "{C82B18CF-45CC-46E1-BFF0-595FA2633015}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kfz.Core.WebAPI", "Kfz.Core.WebAPI\Kfz.Core.WebAPI.csproj", "{037F0A32-82E8-4408-8F92-813CD60B6361}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kfz.Core.Contracts", "Kfz.Core.Contracts\Kfz.Core.Contracts.csproj", "{291C719A-0FF0-4688-B43A-7C77349D2BEE}"
@@ -29,10 +27,6 @@ Global
 		{949B85D7-1583-4B69-AE01-7E52D69DC4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{949B85D7-1583-4B69-AE01-7E52D69DC4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{949B85D7-1583-4B69-AE01-7E52D69DC4E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C82B18CF-45CC-46E1-BFF0-595FA2633015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C82B18CF-45CC-46E1-BFF0-595FA2633015}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C82B18CF-45CC-46E1-BFF0-595FA2633015}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C82B18CF-45CC-46E1-BFF0-595FA2633015}.Release|Any CPU.Build.0 = Release|Any CPU
 		{037F0A32-82E8-4408-8F92-813CD60B6361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{037F0A32-82E8-4408-8F92-813CD60B6361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{037F0A32-82E8-4408-8F92-813CD60B6361}.Release|Any CPU.ActiveCfg = Release|Any CPU
