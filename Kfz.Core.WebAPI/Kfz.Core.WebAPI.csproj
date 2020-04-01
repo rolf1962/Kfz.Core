@@ -6,9 +6,13 @@
 
   <ItemGroup>
     <Compile Remove="InternalLogs\**" />
+    <Compile Remove="Logs\**" />
     <Content Remove="InternalLogs\**" />
+    <Content Remove="Logs\**" />
     <EmbeddedResource Remove="InternalLogs\**" />
+    <EmbeddedResource Remove="Logs\**" />
     <None Remove="InternalLogs\**" />
+    <None Remove="Logs\**" />
   </ItemGroup>
 
   <ItemGroup>
